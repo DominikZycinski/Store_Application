@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.domin.aplikacjasklep.StartActivity"
+    android:background="@drawable/tlo"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/bKategorie"
+
+        android:layout_width="354dp"
+        android:layout_height="45dp"
+
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="77dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Kategorie"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibKoszyk" />
+
+    <TextView
+        android:id="@+id/tvLogowanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="16dp"
+        android:text="Logowanie"
+        android:textColor="@color/black2"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibLogowanie"
+        android:layout_width="30dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="79dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/bKategorie"
+        app:layout_constraintEnd_toStartOf="@+id/tvLogowanie"
+        app:layout_constraintStart_toEndOf="@+id/tvKoszyk"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_partial_secure" />
+
+
+
+    <TextView
+        android:id="@+id/tvKoszyk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Koszyk"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ibKoszyk"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibKoszyk"
+        android:layout_width="31dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/koszyk" />
+
+    <TextView
+        android:id="@+id/tvNajpopularniejsze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="61dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="33dp"
+        android:text="Najpopularniejsze kategorie"
+        android:textColor="@color/white"
+        android:textSize="9pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bKategorie" />
+
+
+    <ImageButton
+        android:id="@+id/ibElektroLogo"
+        android:layout_width="120dp"
+        android:layout_height="132dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/elektronarzedzialogo" />
+
+    <ImageButton
+        android:id="@+id/ibBudowlaneLogo"
+        android:layout_width="121dp"
+        android:layout_height="134dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ibOgrodoweLogo"
+        app:layout_constraintStart_toEndOf="@+id/ibElektroLogo"
+        app:srcCompat="@drawable/budowlanelogo" />
+
+    <ImageButton
+        android:id="@+id/ibOgrodoweLogo"
+        android:layout_width="122dp"
+        android:layout_height="139dp"
+        android:layout_marginBottom="196dp"
+        android:layout_marginEnd="117dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibBudowlaneLogo"
+        app:srcCompat="@drawable/ogrodowelogo" />
+
+    <ImageButton
+        android:id="@+id/imageButton18"
+        android:layout_width="82dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="34dp"
+        app:layout_constraintStart_toEndOf="@+id/ibKoszyk"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosklep" />
+
+    <TextView
+        android:id="@+id/tvElektronarzedzia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Elektronarzędzia"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/tvBudowlane"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibElektroLogo" />
+
+    <TextView
+        android:id="@+id/tvBudowlane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="4dp"
+        android:text="Budowlane"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/tvOgrodowe"
+        app:layout_constraintStart_toEndOf="@+id/tvElektronarzedzia"
+        app:layout_constraintTop_toBottomOf="@+id/ibBudowlaneLogo" />
+
+    <TextView
+        android:id="@+id/tvOgrodowe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:text="Ogrodowe"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibOgrodoweLogo" />
+
+    <ImageView
+        android:id="@+id/ivMotoryzacja"
+        android:layout_width="wrap_content"
+        android:layout_height="134dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivKlucze"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvElektronarzedzia"
+        app:srcCompat="@drawable/motoryzacjalogo" />
+
+    <ImageView
+        android:id="@+id/ivKlucze"
+        android:layout_width="114dp"
+        android:layout_height="135dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivWkretaki"
+        app:layout_constraintStart_toEndOf="@+id/ivMotoryzacja"
+        app:layout_constraintTop_toBottomOf="@+id/tvBudowlane"
+        app:srcCompat="@drawable/kluczelogo" />
+
+    <ImageView
+        android:id="@+id/ivWkretaki"
+        android:layout_width="116dp"
+        android:layout_height="137dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivKlucze"
+        app:layout_constraintTop_toBottomOf="@+id/tvOgrodowe"
+        app:srcCompat="@drawable/wkretakilogo" />
+
+    <TextView
+        android:id="@+id/tvMotoryzacja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Motoryzacja"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMotoryzacja" />
+
+    <TextView
+        android:id="@+id/tvKlucze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="66dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="7dp"
+        android:text="Klucze"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/tvWkreatki"
+        app:layout_constraintStart_toEndOf="@+id/tvMotoryzacja"
+        app:layout_constraintTop_toBottomOf="@+id/ivKlucze" />
+
+    <TextView
+        android:id="@+id/tvWkreatki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="5dp"
+        android:text="Wkrętaki"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivWkretaki" />//>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView_productName"
+        android:layout_width="200px"
+
+        android:layout_height="200px"
+        android:text="productName" />
+
+    <TextView
+        android:id="@+id/textView_quantity"
+        android:layout_width="200px"
+        android:layout_height="200px"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView_price"
+        android:layout_width="200px"
+        android:layout_height="200px"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_toEndOf="@+id/textView_quantity"
+        android:layout_toRightOf="@+id/textView_quantity" />
+</RelativeLayout>

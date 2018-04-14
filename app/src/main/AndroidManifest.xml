@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.domin.aplikacjasklep">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logosklep"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logosklep"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".UserAreaActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".StartActivity" />
+        <activity android:name=".KategorieActivity" />
+        <activity android:name=".BasketActivity" />
+        <activity
+            android:name=".ScrollingKategorie"
+            android:label="@string/title_activity_scrolling_kategorie"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".CategoriesActivity" />
+        <activity android:name=".ItemActivity" />
+        <activity android:name=".ElektronarzedziaActivity" />
+        <activity android:name=".ElektryczneActivity" />
+        <activity android:name=".NasadoweActivity" />
+        <activity android:name=".HydrauliczneActivity" />
+        <activity android:name=".KluczeActivity" />
+        <activity android:name=".LaczenieActivity" />
+        <activity android:name=".MotoryzacjaActivity" />
+        <activity android:name=".OgrodoweActivity" />
+        <activity android:name=".PneumatyczneActivity" />
+        <activity android:name=".PomiaroweActivity" />
+        <activity android:name=".SzczypceActivity" />
+        <activity android:name=".ScierneActivity" />
+        <activity android:name=".TransportActivity" />
+        <activity android:name=".WkretakiActivity" />
+        <activity android:name=".KoszykActivity" />
+        <activity android:name=".PayOrders"></activity>
+        <activity android:name=".PaymentDetails"></activity>
+    </application>
+
+</manifest>

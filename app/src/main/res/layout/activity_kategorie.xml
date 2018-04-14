@@ -1,0 +1,155 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.domin.aplikacjasklep.KategorieActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ibBHP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="286dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="23dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvElektronarzedzia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.229"
+            app:srcCompat="@drawable/bhp" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/ibBHP"
+            app:layout_constraintTop_toBottomOf="@+id/ibBHP"
+            app:srcCompat="@drawable/budowlane" />
+
+        <TextView
+            android:id="@+id/tvBudowlane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Budowlane"
+            android:textColor="@color/black2"
+            android:textSize="50px"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageButton4" />
+
+        <TextView
+            android:id="@+id/tvBHP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="48dp"
+            android:text="BHP"
+            android:textColor="@color/black2"
+            android:textSize="50px"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/imageButton4"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+            app:srcCompat="@drawable/elektryczne" />
+
+        <TextView
+            android:id="@+id/tvElektryczne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Elektryczne"
+            android:textColor="@color/black2"
+            android:textSize="50px"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvBudowlane"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/imageButton5"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+            app:srcCompat="@drawable/hydrauliczne" />
+
+        <TextView
+            android:id="@+id/tvHydrauliczne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Hydrauliczne"
+            android:textColor="@color/black2"
+            android:textSize="50px"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvElektryczne"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/elektronarzedzia" />
+
+        <TextView
+            android:id="@+id/tvElektronarzedzia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="100dp"
+            android:text="Elektronarzedzia"
+            android:textColor="@color/black2"
+            android:textSize="50px"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton10"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton8"
+            app:layout_constraintTop_toBottomOf="@+id/ibBHP" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton10"
+            app:layout_constraintStart_toStartOf="@+id/imageButton8"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+            app:srcCompat="@drawable/klucze" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@+id/imageButton8"
+            app:layout_constraintTop_toBottomOf="@+id/tvElektronarzedzia"
+            app:srcCompat="@drawable/klucze" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/imageButton9"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton9"
+            app:srcCompat="@drawable/kluczenasadowe" />
+        <!-- everything you already have -->
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
